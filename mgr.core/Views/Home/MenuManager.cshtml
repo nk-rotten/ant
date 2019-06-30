@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = "菜单管理";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+<div id="app">
+    <f-addbtn></f-addbtn>
+    <f-table :opt="true" :edit="true" :del="true" :url="'/Home/GetAllParentMenus'"></f-table>
+    <f-dialog></f-dialog>
+</div>
+<script src="~/js/menumanager.js"></script>
